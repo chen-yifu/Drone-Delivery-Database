@@ -5,22 +5,26 @@ Collaborators: Haoran Chen, Sang Hun Jo
 
 A MySQL database interface for a mock application.
 
-The ongoing pandemic has stimulated the greater increase in customer needs for convenient and fast delivery application.
+### Project Description
+
+  The ongoing pandemic has stimulated the greater increase in customer needs for convenient and fast delivery application.
 To satisfy their needs, we have decided to use drone technology instead of automobiles because drones can provide the delivery service wherever customers are and drones can easily fulfill the service in the rush hour. 
-To make the application, we have first made a database that includes relationships and characteristics of Customer, Store Staff, Item, Order, Payment, Payment Method, Drone, Drone Activity History and Drone Agent. To avoid data redundancy, we have normalized agents and store tables to BCNF in the beginning. We have mainly used JDBC to make a model and controller for our database. Model is designed to perform basic CRUD queries to our database, whereas the controller is used to perform more complex queries and fundamental logics behind each query. 
-Finally, we have used Jswing to design our graphical user interface for actual users to use the database system comfortably. Our system is robustly keeping any change on our database. As such, when we re-launch the application, it loads the same data as the latest changes. 
+  To make the application, we have first made a database that includes relationships and characteristics of Customer, Store Staff, Item, Order, Payment, Payment Method, Drone, Drone Activity History and Drone Agent. To avoid data redundancy, we have normalized agents and store tables to BCNF in the beginning. We have mainly used JDBC to make a model and controller for our database. Model is designed to perform basic CRUD queries to our database, whereas the controller is used to perform more complex queries and fundamental logics behind each query. 
+  Finally, we have used Jswing to design our graphical user interface for actual users to use the database system comfortably. Our system is robustly keeping any change on our database. As such, when we re-launch the application, it loads the same data as the latest changes. 
 
 
-## Entity Diagram:
+### ER Diagram:
+
+<img src="https://github.com/chen-yifu/Drone-Delivery-Database/blob/master/ER%20Diagram.png"
+     alt="ER Diagram"
+     style="float: left; margin-right: 10px;" />
 
 
 
 
 
 
-
-
-## Relational Schema Definition:
+### Relational Schema Definition:
 Store_Staff(__id__:int, name: string, password: string, phone: int, email: string, address: string, role: string)   Candidate Keys(id)
 
 Customer(__id__:int, name: string, password: string, phone: int, email: string, address: string, VIP_level: string, customer_since: date) Candidate Keys(id)
